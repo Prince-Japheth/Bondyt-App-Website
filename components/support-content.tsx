@@ -36,13 +36,27 @@ export function SupportContent() {
     }
   }, [messages]);
 
-  // Add a new message
+  // Add a new message and send to WhatsApp
   const handleSendMessage = () => {
     if (inputValue.trim() === "") return;
 
+    // Add message to chat
     const newMessage = { id: messages.length + 1, text: inputValue, type: "sent", status: "sent" };
     setMessages([...messages, newMessage]);
+
+    // Send to WhatsApp
+    const phoneNumber = "15096170531";
+    const encodedMessage = encodeURIComponent(inputValue);
+    window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
     setInputValue("");
+  };
+
+  // Handle enter key press
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSendMessage();
+    }
   };
 
   // Simulate status updates
@@ -147,6 +161,7 @@ export function SupportContent() {
                       className="flex-1"
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
+                      onKeyPress={handleKeyPress}
                       style={{
                         backgroundColor: "#f5f4f4",
                         borderRadius: "9999px",

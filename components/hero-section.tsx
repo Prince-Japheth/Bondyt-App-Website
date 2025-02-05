@@ -7,6 +7,10 @@ import { fadeInUp, staggerChildren } from "@/lib/animations"
 import { HeroDownloadButtons } from "@/components/download-buttons"
 
 export function HeroSection() {
+  const openWhatsApp = () => {
+    window.open(`https://wa.me/15096170531`, '_blank')
+  }
+
   return (
     <section className="relative overflow-hidden">
       {/* Ellipse Background */}
@@ -31,7 +35,7 @@ export function HeroSection() {
           variants={fadeInUp}
           className="mx-auto text-center text-4xl sm:text-6xl lg:text-[64px] leading-tight sm:leading-[64px] lg:leading-[72px] tracking-[-0.03em]"
           style={{
-            maxWidth: "95%", // Slightly wider on mobile
+            maxWidth: "95%",
             opacity: 0,
             textUnderlinePosition: "from-font",
             textDecorationSkipInk: "none",
@@ -67,7 +71,11 @@ export function HeroSection() {
             height={400}
             className="mx-auto"
           />
-          <div className="absolute bottom-8 right-16 translate-x-1/2 translate-y-[-90%]" style={{ marginRight: -205 }}>
+          <div 
+            className="absolute bottom-8 right-16 translate-x-1/2 translate-y-[-90%] cursor-pointer transform transition-transform hover:scale-105" 
+            style={{ marginRight: -205 }}
+            onClick={openWhatsApp}
+          >
             <div
               className="flex items-center justify-center rounded-full"
               style={{ backgroundColor: "#f0dcfe", padding: 40 }}
@@ -80,4 +88,3 @@ export function HeroSection() {
     </section>
   )
 }
-
