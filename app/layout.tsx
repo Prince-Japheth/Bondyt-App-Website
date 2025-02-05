@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <title>Bondyt App Website</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={`${inter.className}`}>{children}</body>
     </html>
