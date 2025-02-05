@@ -11,8 +11,8 @@ import { useState } from "react"
 const currentYear = new Date().getFullYear();
 
 const footerLinks = [
-  { href: "/privacy-policy", label: "Privacy policy" },
-  { href: "/terms", label: "Terms of use" },
+  { href: "/policies", label: "Privacy policy" },
+  { href: "/policies", label: "Terms of use" },
   { href: "/support", label: "Support" },
 ]
 
