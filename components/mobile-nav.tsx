@@ -3,12 +3,17 @@
 import { useState } from "react"
 import { Globe, ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { LanguageModal } from "@/components/language-modal"
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
 import { Menu, X } from "lucide-react"
 import { usePathname, useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Loader } from "@/components/loader"
+
+interface SiteMobileNavProps {
+  selectedLang: string
+  setSelectedLang: (lang: string) => void
+}
 
 const links = [
   { href: "/", label: "Home" },
@@ -19,21 +24,14 @@ const links = [
   { href: "/blog", label: "Updates" },
 ]
 
-const languages = [
-  { code: "EN", label: "English" },
-  { code: "ES", label: "Español" },
-  { code: "FR", label: "Français" },
-  { code: "DE", label: "Deutsch" },
-  { code: "IT", label: "Italiano" },
-  { code: "PT", label: "Português" },
-]
 
-export function MobileNav() {
+export function MobileNav({ selectedLang = "EN", setSelectedLang }: SiteMobileNavProps) {
+  const [isLanguageModalOpen, setIsLanguageModalOpen] = useState(false)
+
   const [open, setOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const pathname = usePathname()
   const router = useRouter()
-  const [selectedLang, setSelectedLang] = useState("EN")
 
   const handleLanguageChange = (langCode: string) => {
     setSelectedLang(langCode)
@@ -58,7 +56,7 @@ export function MobileNav() {
           </Button>
         </SheetTrigger>
         <SheetContent side="top" className="w-full p-0 border-none rounded-b-[32px] max-h-[85vh]">
-        <div className="flex flex-col bg-white/80 backdrop-blur-xl rounded-b-[32px] p-6">
+          <div className="flex flex-col bg-white/80 backdrop-blur-xl rounded-b-[32px] p-6">
             <div className="flex justify-end mb-16">
               <SheetClose asChild>
               </SheetClose>
@@ -90,27 +88,29 @@ export function MobileNav() {
               ))}
             </nav>
             <div className="mt-auto pt-6">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm" className="flex items-center space-x-2 rounded-full border px-4">
-                    <Globe className="h-4 w-4" />
-                    <span>{selectedLang}</span>
-                    <ChevronDown className="h-4 w-4 ml-2" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-[150px]">
-                  {languages.map((lang) => (
-                    <DropdownMenuItem
-                      key={lang.code}
-                      onClick={() => handleLanguageChange(lang.code)}
-                      className="cursor-pointer"
-                    >
-                      <span className="font-medium">{lang.code}</span>
-                      <span className="ml-2 text-muted-foreground">{lang.label}</span>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
+
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex items-center space-x-2 rounded-full border px-4"
+                onClick={() => setIsLanguageModalOpen(true)}
+              >
+                <Globe className="h-4 w-4" />
+                <span>{selectedLang}</span>
+                <ChevronDown className="h-4 w-4 ml-2" />
+              </Button>
+              <LanguageModal
+                isOpen={isLanguageModalOpen}
+                onClose={() => setIsLanguageModalOpen(false)}
+                onSave={(country, language) => {
+                  setSelectedLang(language)
+                  // Here you would typically integrate with your i18n solution
+                  // For example: i18n.changeLanguage(language)
+                }}
+                initialLanguage={selectedLang}
+              />
+
+
             </div>
           </div>
         </SheetContent>
