@@ -330,7 +330,7 @@ export default function PoliciesPage() {
             animate="animate"
             variants={staggerChildren}
           >
-            <motion.div variants={fadeInUp} className=" px-40 text-center max-w-3xl mx-auto mb-16">
+            <motion.div variants={fadeInUp} className="px-4 lg:px-40 text-center max-w-3xl mx-auto mb-16">
               <h1 className="mb-4 font-nohemi text-4xl font-medium md:text-5xl">
                 We are committed to providing a safe space for everyone on Bondyt
               </h1>
@@ -340,7 +340,7 @@ export default function PoliciesPage() {
               </p>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className=" px-40 grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 lg:mx-40">
+            <motion.div variants={fadeInUp} className="px-4 lg:px-40 grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 lg:mx-40">
               {userImages.map((image, index) => (
                 <div key={index} className="aspect-square overflow-hidden rounded-3xl">
                   <Image
@@ -354,7 +354,7 @@ export default function PoliciesPage() {
               ))}
             </motion.div>
 
-            <div className="px-40 py-20 grid md:grid-cols-[300px,1fr] lg:mt-20 gap-8 items-start"
+            <div className="px-4 lg:px-40 py-20 grid md:grid-cols-[300px,1fr] lg:mt-20 gap-8 items-start"
               style={{ backgroundColor: '#f3f5fc' }}>
               <motion.div
                 variants={fadeInUp}
