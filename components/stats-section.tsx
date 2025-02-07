@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { fadeInUp, staggerChildren } from "@/lib/animations"
 import { useState, useEffect } from "react"
 import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 const stats = [
   {
@@ -21,8 +22,10 @@ const stats = [
 ]
 
 export function StatsSection() {
+  const { ref, inView } = useInView();
+
   return (
-    <section className="py-12 md:py-24">
+    <section className="py-12 md:py-24" ref={ref}>
       <motion.div
         className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"
         initial="initial"
@@ -43,7 +46,14 @@ export function StatsSection() {
           {stats.map((stat, index) => (
             <motion.div key={index} variants={fadeInUp} className="text-center">
               <p className="mb-2 font-nohemi text-3xl sm:text-4xl font-bold text-[#F878FF]">
-                <CountUp end={parseInt(stat.number.replace("+", ""))} />
+                {inView ? (
+                  <CountUp
+                    end={parseInt(stat.number.replace("+", ""))}
+                    suffix={stat.number.includes("+") ? "+" : stat.number.includes("k") ? "k" : ""}
+                  />
+                ) : (
+                  <span>0</span>
+                )}
               </p>
               <p className="text-gray-600">{stat.label}</p>
             </motion.div>
