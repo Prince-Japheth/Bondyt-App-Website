@@ -50,7 +50,6 @@ export function StatsSection() {
                   <CountUp
                     end={parseInt(stat.number.replace("+", ""))}
                     suffix={stat.number.includes("+") ? "+" : stat.number.includes("k") ? "k" : ""}
-                    delay={1000} // delay the start of the counter by 1 second
                   />
                 ) : (
                   <span>0</span>
