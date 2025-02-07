@@ -42,7 +42,7 @@ export function StatsSection() {
           God's grace and a dedicated and effective team, Bondyt has scaled to reach this height.
         </motion.p>
 
-        <motion.div variants={staggerChildren} className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+        <motion.div variants={staggerChildren} className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:px-40">
           {stats.map((stat, index) => (
             <motion.div key={index} variants={fadeInUp} className="text-center">
               <p className="mb-2 font-nohemi text-3xl sm:text-4xl font-bold text-[#F878FF]">
