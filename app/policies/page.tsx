@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { motion } from "framer-motion"
 import { fadeInUp, staggerChildren } from "@/lib/animations"
 import { cn } from "@/lib/utils"
+import { MobilePolicyViewer } from "@/components/mobile-policy-viewer"
 
 const policies = [
   {
@@ -208,16 +209,6 @@ In the event of a conflict between a Third Party Store’s or mobile carrier’s
   {
     id: "13",
     title: "DISPUTE RESOLUTION",
-    content: `The following additional terms and conditions apply to you if you download the App from a Third Party Store. To the extent that the other terms and conditions of these Terms are less restrictive than, or otherwise conflict with, the terms and conditions of this Section, the more restrictive or conflicting terms and conditions in this Section will apply, but solely with respect to the App and the Third Party Store. You acknowledge and agree that:
-These Terms are concluded solely between you and Bondyt Technologies and not with the providers of the Third Party Store, and Bondyt Technologies (and not the Third Party Store providers) is solely responsible for the App and the content thereof. To the extent that these Terms provide for usage rules for the App which are less restrictive or in conflict with the applicable terms of service of the Third Party Store from which you obtain the App, the more restrictive or conflicting term of the Third Party Store will take precedence and will apply.
-The Third Party Store provider has no obligation whatsoever to provide any maintenance and support services with respect to the App. Bondyt Technologies is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed. The Third Party Store provider will have no warranty obligation whatsoever with respect to the App, and any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be the sole responsibility of Bondyt Technologies.
-Bondyt Technologies, not the Third Party Store provider, is responsible for addressing any claims you or any third party may have relating to the App or your possession and/or use of the App, including, but not limited to: (i) product liability claims; (ii) any claim that the App fails to conform to any applicable legal or regulatory requirement; (iii) claims arising under consumer protection or similar legislation; and/or (iv) intellectual property infringement claims.
-The Third Party Store provider and its subsidiaries are third party beneficiaries of these Terms, and, upon your acceptance of these Terms, the Third Party Store provider from whom you obtained the App will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third party beneficiary thereof.
-In the event of a conflict between a Third Party Store’s or mobile carrier’s applicable terms and conditions and these Terms, the terms and conditions of the Third Party Store or mobile carrier shall govern and control. We are not responsible and have no liability whatsoever for third-party goods or services you obtain through a Third Party Store or mobile carrier. We encourage you to make whatever investigation you feel necessary or appropriate before proceeding with any online transaction with any of these third parties.`,
-  },
-  {
-    id: "13",
-    title: "DISPUTE RESOLUTION",
     content: `Please read the following arbitration agreement in this Section (“Arbitration Agreement”) carefully. Unless you opt out in the manner described in Section 13(10) below, this Arbitration Agreement requires you and Bondyt Technologies to resolve disputes by binding arbitration instead of in court, and limits the manner in which we may seek relief from each other.
 1. When Does This Arbitration Agreement Apply? This Arbitration Agreement applies to any disputes or claims of any kind whatsoever (whether based in contract, tort, statute, regulation, ordinance, fraud, misrepresentation or any other legal or equitable theory) between you and Bondyt Technologies arising out of or relating to the Terms, prior versions of the Terms, your use of our App, or any other aspect of your relationship with Bondyt, including claims or disputes arising (but not actually filed in arbitration) before the effective date of these Terms. It requires that, and by entering into these Terms you and Bondyt Technologies agree, that such disputes or claims will be resolved by binding arbitration, rather than in court, except that (i) you or Bondyt may assert individual claims in small claims court if your claims qualify; and (ii) you or Bondyt may seek equitable relief in court for infringement or misuse of intellectual property rights.
 2. Notice of Dispute and Informal Resolution. Before beginning the arbitration process, you and Bondyt Technologies agree to first notify one another of the dispute in writing at least 60 days in advance of initiating an arbitration. Notice to Bondyt Technologies must be sent by letter to our registered agent: CT Corporation, 1209 Orange Street, City of Wilmington, County of New Castle, Delaware 19801, and must provide your name, current email address, mailing address, and telephone number, as well as the name, email address, and telephone number associated with your Bondyt account (if different from your current information); and describe the nature of the claim and the specific relief being sought.
@@ -324,23 +315,21 @@ export default function PoliciesPage() {
         <>
           <SiteHeader />
 
-          <motion.main
-            className="py-12"
-            initial="initial"
-            animate="animate"
-            variants={staggerChildren}
-          >
+          <motion.main className="py-12" initial="initial" animate="animate" variants={staggerChildren}>
             <motion.div variants={fadeInUp} className="px-4 lg:px-40 text-center max-w-3xl mx-auto mb-16">
               <h1 className="mb-4 font-nohemi text-4xl font-medium md:text-5xl">
                 We are committed to providing a safe space for everyone on Bondyt
               </h1>
               <p className="text-gray-600">
-                To ensure your continuous safety when using our product, we have listed all our policies below, click on any
-                of the policies below to see the efforts we have made to keep you safe
+                To ensure your continuous safety when using our product, we have listed all our policies below, click on
+                any of the policies below to see the efforts we have made to keep you safe
               </p>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className="px-4 lg:px-40 grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 lg:mx-40">
+            <motion.div
+              variants={fadeInUp}
+              className="px-4 lg:px-40 grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 lg:mx-40"
+            >
               {userImages.map((image, index) => (
                 <div key={index} className="aspect-square overflow-hidden rounded-3xl">
                   <Image
@@ -354,48 +343,48 @@ export default function PoliciesPage() {
               ))}
             </motion.div>
 
-            <div className="px-4 lg:px-40 py-20 grid md:grid-cols-[300px,1fr] lg:mt-20 gap-8 items-start"
-              style={{ backgroundColor: '#f3f5fc' }}>
-              <motion.div
-                variants={fadeInUp}
-                className="flex flex-col space-y-3"
+            <div style={{ backgroundColor: "#f3f5fc", paddingTop: '20px',}}>
+              <MobilePolicyViewer policies={policies} />
+              <div
+                className="px-4 lg:px-40 py-20 hidden md:grid md:grid-cols-[300px,1fr] lg:mt-20 gap-8 items-start"
               >
-                {policies.map((policy) => (
-                  <button
-                    key={policy.id}
-                    onClick={() => setActivePolicy(policy)}
-                    className={cn(
-                      "w-full text-left px-6 py-3 transition-colors border-2 border-black",
-                      activePolicy.id === policy.id
-                        ? "bg-gradient-to-r from-[#F878FF] to-[#CD8DFE] text-white"
-                        : "hover:bg-gray-100 bg-white text-black",
-                    )}
-                    style={{ fontSize: "small", borderRadius: 15, width: 'fit-content' }}
-                  >
-                    {policy.title}
-                    <span style={{ marginLeft: 5 }}>●</span>
-                  </button>
-
-                ))}
-              </motion.div>
-
-              <motion.div
-                variants={fadeInUp}
-                className="bg-white rounded-3xl p-8 shadow-sm"
-                key={activePolicy.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <h2 className="text-2xl font-medium mb-6">{activePolicy.title}</h2>
-                <div className="prose max-w-none">
-                  {activePolicy.content.split("\n\n").map((paragraph, index) => (
-                    <p key={index} className="mb-4 text-gray-600">
-                      {paragraph.trim()}
-                    </p>
+                <motion.div variants={fadeInUp} className="flex flex-col space-y-3">
+                  {policies.map((policy) => (
+                    <button
+                      key={policy.id}
+                      onClick={() => setActivePolicy(policy)}
+                      className={cn(
+                        "w-full text-left px-6 py-3 transition-colors border-2 border-black",
+                        activePolicy.id === policy.id
+                          ? "bg-gradient-to-r from-[#F878FF] to-[#CD8DFE] text-white"
+                          : "hover:bg-gray-100 bg-white text-black",
+                      )}
+                      style={{ fontSize: "small", borderRadius: 15, width: "fit-content" }}
+                    >
+                      {policy.title}
+                      <span style={{ marginLeft: 5 }}>●</span>
+                    </button>
                   ))}
-                </div>
-              </motion.div>
+                </motion.div>
+
+                <motion.div
+                  variants={fadeInUp}
+                  className="bg-white rounded-3xl p-8 shadow-sm"
+                  key={activePolicy.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <h2 className="text-2xl font-medium mb-6">{activePolicy.title}</h2>
+                  <div className="prose max-w-none">
+                    {activePolicy.content.split("\n\n").map((paragraph, index) => (
+                      <p key={index} className="mb-4 textgray-600">
+                        {paragraph.trim()}
+                      </p>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </motion.main>
 
@@ -405,3 +394,4 @@ export default function PoliciesPage() {
     </div>
   )
 }
+
