@@ -88,7 +88,8 @@ export default function BlogPost({ params }: BlogPostParams) {
               <p className="text-gray-600">Get the latest news on our product updates</p>
             </motion.div>
 
-            <div className="mt-10 bg-gray-50 py-8 px-4 sm:px-6 md:px-10 lg:px-40">
+            <div className="mt-10 py-8 px-4 sm:px-6 md:px-10 lg:px-40"
+              style={{ backgroundColor: '#f3f5fc' }}>
               <motion.article 
                 variants={fadeInUp} 
                 className="mx-auto rounded-3xl bg-white p-4 pb-12 md:pb-20 mb-12 md:mb-20 shadow-sm"

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Globe } from "lucide-react"
+import { Globe, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useState } from "react"
@@ -47,7 +47,7 @@ export function SiteFooter() {
     <footer className="border-t py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col space-y-8">
-          {/* Logo and Copyright */}
+          {/* Logo */}
           <div className="flex flex-col space-y-4 items-center text-center sm:items-start sm:text-left">
             <Link href="/" className="flex items-center space-x-2">
               <Image
@@ -58,42 +58,45 @@ export function SiteFooter() {
                 className="h-14 w-auto invert"
               />
             </Link>
-            <p className="text-sm text-gray-600">Copyright {currentYear} Bondyt Technologies all rights reserved.</p>
           </div>
 
-          {/* Links and Language Selector */}
-          <div className="flex flex-col space-y-8 items-center sm:flex-row sm:space-y-0 sm:justify-between">
-            <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-8">
-              {footerLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="text-sm text-gray-600 hover:text-gray-900">
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm" className="flex items-center space-x-2 rounded-full border px-4">
-                  <Globe className="h-4 w-4" />
-                  <span>{selectedLang}</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-[150px]">
-                {languages.map((lang) => (
-                  <DropdownMenuItem
-                    key={lang.code}
-                    onClick={() => handleLanguageChange(lang.code)}
-                    className="cursor-pointer"
-                  >
-                    <span className="font-medium">{lang.code}</span>
-                    <span className="ml-2 text-muted-foreground">{lang.label}</span>
-                  </DropdownMenuItem>
+          {/* Copyright and Links */}
+          <div className="flex justify-between items-center m-0" style={{ margin: '0 !important' }}>
+            <p className="text-sm text-gray-600">Copyright {currentYear} Bondyt Technologies all rights reserved.</p>
+            <div className="flex items-center space-x-4">
+              <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-8">
+                {footerLinks.map((link) => (
+                  <Link key={link.href} href={link.href} className="text-sm text-gray-600 hover:text-gray-900">
+                    {link.label}
+                  </Link>
                 ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+              </nav>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="sm" className="flex items-center space-x-2 rounded-full border px-4">
+                    <Globe className="h-4 w-4" />
+                    <span>{selectedLang}</span>
+                    <ChevronDown className="h-4 w-4 ml-2" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-[150px]">
+                  {languages.map((lang) => (
+                    <DropdownMenuItem
+                      key={lang.code}
+                      onClick={() => handleLanguageChange(lang.code)}
+                      className="cursor-pointer"
+                    >
+                      <span className="font-medium">{lang.code}</span>
+                      <span className="ml-2 text-muted-foreground">{lang.label}</span>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-start space-x-6">
             {socialLinks.map((social) => (
               <Link
                 key={social.label}

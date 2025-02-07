@@ -65,23 +65,24 @@ export default function BlogPage() {
             <motion.div variants={fadeInUp} className="mx-auto mt-8 max-w-lg px-4 sm:px-6 lg:px-8">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
-                <Input 
-                  type="search" 
-                  placeholder="Search" 
-                  className="pl-10 py-3 sm:py-4 md:py-6 rounded-full" 
+                <Input
+                  type="search"
+                  placeholder="Search"
+                  className="pl-10 py-3 sm:py-4 md:py-6 rounded-full"
                 />
               </div>
             </motion.div>
 
             <motion.div
               variants={staggerChildren}
-              className="w-full px-4 sm:px-6 lg:px-40 py-8 md:py-16 mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 bg-gray-50"
+              className="w-full px-4 sm:px-6 lg:px-40 py-8 md:py-16 mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+              style={{ backgroundColor: '#f3f5fc' }}
             >
               {blogs.map((blog, index) => (
-                <motion.div key={index} variants={fadeInUp}>
+                <motion.div key={index} variants={fadeInUp} className="flex">
                   <Link
                     href={`/blog/${blog.slug}`}
-                    className="group block overflow-hidden rounded-3xl bg-white transition hover:shadow-md p-4 mx-2 mb-6"
+                    className="group block overflow-hidden rounded-3xl bg-white transition hover:shadow-md p-4 mx-2 mb-6 flex-1"
                   >
                     <div className="aspect-[4/3] overflow-hidden rounded-3xl p-2">
                       <Image

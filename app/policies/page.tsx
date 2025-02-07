@@ -325,12 +325,12 @@ export default function PoliciesPage() {
           <SiteHeader />
 
           <motion.main
-            className="container mx-auto px-4 py-12"
+            className="py-12"
             initial="initial"
             animate="animate"
             variants={staggerChildren}
           >
-            <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-16">
+            <motion.div variants={fadeInUp} className=" px-40 text-center max-w-3xl mx-auto mb-16">
               <h1 className="mb-4 font-nohemi text-4xl font-medium md:text-5xl">
                 We are committed to providing a safe space for everyone on Bondyt
               </h1>
@@ -340,7 +340,7 @@ export default function PoliciesPage() {
               </p>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 lg:mx-40">
+            <motion.div variants={fadeInUp} className=" px-40 grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 lg:mx-40">
               {userImages.map((image, index) => (
                 <div key={index} className="aspect-square overflow-hidden rounded-3xl">
                   <Image
@@ -354,21 +354,26 @@ export default function PoliciesPage() {
               ))}
             </motion.div>
 
-            <div className="grid md:grid-cols-[300px,1fr] lg:mt-20 gap-8 items-start">
-              <motion.div variants={fadeInUp} className="space-y-3 pt-8">
+            <div className="px-40 py-20 grid md:grid-cols-[300px,1fr] lg:mt-20 gap-8 items-start"
+              style={{ backgroundColor: '#f3f5fc' }}>
+              <motion.div
+                variants={fadeInUp}
+                className="flex flex-col space-y-3"
+              >
                 {policies.map((policy) => (
                   <button
                     key={policy.id}
                     onClick={() => setActivePolicy(policy)}
                     className={cn(
-                      "w-full text-left px-6 py-3 rounded-lg transition-colors",
+                      "w-full text-left px-6 py-3 transition-colors border-2 border-black",
                       activePolicy.id === policy.id
                         ? "bg-gradient-to-r from-[#F878FF] to-[#CD8DFE] text-white"
-                        : "hover:bg-gray-100",
+                        : "hover:bg-gray-100 bg-white text-black",
                     )}
-                    style={{ fontSize: "small" }}  /* Tailwind class for small text size */
+                    style={{ fontSize: "small", borderRadius: 15, width: 'fit-content' }}
                   >
                     {policy.title}
+                    <span style={{ marginLeft: 5 }}>●</span>
                   </button>
 
                 ))}

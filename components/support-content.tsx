@@ -111,7 +111,8 @@ export function SupportContent() {
               </p>
             </motion.div>
 
-            <div className="mx-auto mt-16 grid p-4 lg:p-20 gap-8 md:grid-cols-3 bg-gray-50">
+            <div className="mx-auto mt-16 grid p-4 lg:p-20 gap-8 md:grid-cols-3" 
+              style={{ backgroundColor: '#f3f5fc' }}>
               {/* FAQ Section - hidden on mobile, shown first on desktop */}
               <motion.div variants={fadeInUp} className="hidden md:block md:col-span-2">
                 <div className="transform scale-75 origin-top-left" style={{ width: "135%" }}>

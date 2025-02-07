@@ -31,7 +31,8 @@ export function AboutContent() {
           <AboutHero />
           <MissionVision />
           <StatsSection />
-          <section className="py-24 bg-[#f3f5fc]">
+          <section className="py-24"
+              style={{ backgroundColor: '#f3f5fc' }}>
             <motion.div
               className="container mx-auto px-4 lg:px-24"
               initial="initial"

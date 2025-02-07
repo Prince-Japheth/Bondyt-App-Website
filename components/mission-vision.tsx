@@ -31,17 +31,6 @@ export function MissionVision() {
             </p>
           </motion.div>
         </div>
-
-        <div className="mt-16 lg:text-center">
-          <motion.div variants={fadeInUp}>
-            <h2 className="mb-6 font-nohemi text-4xl font-medium text-white">Why Us?</h2>
-            <p className="text-gray-400 max-w-3xl mx-auto">
-              Well the right question, is why not us? But in case you still need an answer to why you should sign up with Bondyt, then we would say just give it a try and don’t worry much, you can always delete the account if we don’t amuse you.
-              <br />
-              <b>Let’s get you bonded!</b>
-            </p>
-          </motion.div>
-        </div>
       </motion.div>
     </section>
   )

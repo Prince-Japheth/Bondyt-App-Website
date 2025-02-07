@@ -71,20 +71,36 @@ export function HeroSection() {
             height={400}
             className="mx-auto"
           />
-          <div 
-            className="absolute bottom-8 right-16 translate-x-1/2 translate-y-[-90%] cursor-pointer transform transition-transform hover:scale-105" 
-            style={{ marginRight: -205 }}
-            onClick={openWhatsApp}
-          >
-            <div
-              className="flex items-center justify-center rounded-full"
-              style={{ backgroundColor: "#f0dcfe", padding: 40 }}
-            >
-              <Image src="/pinkwhats.png" alt="WhatsApp" width={73} height={73} />
-            </div>
-          </div>
         </motion.div>
       </motion.div>
+
+      <div 
+    className="fixed bottom-4 z-50 cursor-pointer transform transition-transform hover:scale-105 hidden md:block" 
+    onClick={openWhatsApp}
+    style={{right: '100px'}}
+  >
+    <div
+      className="flex items-center justify-center rounded-full"
+      style={{ backgroundColor: "#f0dcfe", padding: 40 }}
+    >
+      <Image src="/pinkwhats.png" alt="WhatsApp" width={73} height={73} />
+    </div>
+  </div>
+
+  <div 
+    className="fixed bottom-4 z-50 cursor-pointer transform transition-transform hover:scale-105 block md:hidden" 
+    onClick={openWhatsApp}
+    style={{right: '20px'}}
+  >
+    <div
+      className="flex items-center justify-center rounded-full"
+      style={{ backgroundColor: "#f0dcfe", padding: 20 }}
+    >
+      <Image src="/pinkwhats.png" alt="WhatsApp" width={40} height={40} />
+    </div>
+  </div>
+
+
     </section>
   )
 }

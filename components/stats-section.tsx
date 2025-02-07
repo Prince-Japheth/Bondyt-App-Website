@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import { fadeInUp, staggerChildren } from "@/lib/animations"
+import { useState, useEffect } from "react"
+import CountUp from 'react-countup';
 
 const stats = [
   {
@@ -40,7 +42,9 @@ export function StatsSection() {
         <motion.div variants={staggerChildren} className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
           {stats.map((stat, index) => (
             <motion.div key={index} variants={fadeInUp} className="text-center">
-              <p className="mb-2 font-nohemi text-3xl sm:text-4xl font-bold text-[#F878FF]">{stat.number}</p>
+              <p className="mb-2 font-nohemi text-3xl sm:text-4xl font-bold text-[#F878FF]">
+                <CountUp end={parseInt(stat.number.replace("+", ""))} />
+              </p>
               <p className="text-gray-600">{stat.label}</p>
             </motion.div>
           ))}
