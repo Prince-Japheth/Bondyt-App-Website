@@ -16,6 +16,7 @@ const links = [
   { href: "/support", label: "Support" },
   { href: "/merchant", label: "Merchant" },
   { href: "/policies", label: "Policies" },
+  { href: "/blog", label: "Updates" },
 ]
 
 const languages = [
