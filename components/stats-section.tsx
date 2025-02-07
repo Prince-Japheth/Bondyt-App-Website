@@ -48,6 +48,7 @@ export function StatsSection() {
               <p className="mb-2 font-nohemi text-3xl sm:text-4xl font-bold text-[#F878FF]">
                 {inView ? (
                   <CountUp
+                  duration={4}
                     end={parseInt(stat.number.replace("+", ""))}
                     suffix={stat.number.includes("+") ? "+" : stat.number.includes("k") ? "k" : ""}
                   />
