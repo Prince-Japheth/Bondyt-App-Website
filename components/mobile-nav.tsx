@@ -58,7 +58,7 @@ export function MobileNav() {
           </Button>
         </SheetTrigger>
         <SheetContent side="top" className="w-full p-0 border-none rounded-b-[32px] max-h-[85vh]">
-          <div className="flex flex-col bg-white/80 backdrop-blur-xl p-6">
+        <div className="flex flex-col bg-white/80 backdrop-blur-xl rounded-b-[32px] p-6">
             <div className="flex justify-end mb-16">
               <SheetClose asChild>
               </SheetClose>
