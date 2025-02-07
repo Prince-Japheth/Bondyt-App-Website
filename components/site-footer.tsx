@@ -44,7 +44,7 @@ export function SiteFooter() {
   }
 
   return (
-    <footer className="border-t py-12 bg-white">
+    <footer className="border-t py-8 md:py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col space-y-8">
           {/* Logo */}
@@ -61,9 +61,9 @@ export function SiteFooter() {
           </div>
 
           {/* Copyright and Links */}
-          <div className="flex justify-between items-center m-0" style={{ margin: '0 !important' }}>
-            <p className="text-sm text-gray-600">Copyright {currentYear} Bondyt Technologies all rights reserved.</p>
-            <div className="flex items-center space-x-4">
+          <div className="flex flex-col sm:flex-row sm:justify-between items-center sm:items-start space-y-4 sm:space-y-0">
+            <p className="text-sm text-gray-600 text-center sm:text-left">Copyright {currentYear} Bondyt Technologies all rights reserved.</p>
+            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-8">
                 {footerLinks.map((link) => (
                   <Link key={link.href} href={link.href} className="text-sm text-gray-600 hover:text-gray-900">
@@ -96,7 +96,7 @@ export function SiteFooter() {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-start space-x-6">
+          <div className="flex justify-center sm:justify-start space-x-6">
             {socialLinks.map((social) => (
               <Link
                 key={social.label}

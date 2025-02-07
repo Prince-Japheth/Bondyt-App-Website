@@ -111,7 +111,7 @@ export default function MerchantPage() {
               </div>
             </motion.section>
 
-            <motion.section variants={fadeInUp} className="container mx-auto px-6 my-24 border-t border-b">
+            <motion.section variants={fadeInUp} className="container mx-auto px-6 my-24">
               <p className="text-center text-sm mt-8" style={{ color: '#595757' }}>Businesses who trust us</p>
               <Marquee className="grid grid-cols-3 md:grid-cols-6">
                 {partners.map((partner, index) => (
@@ -141,7 +141,7 @@ export default function MerchantPage() {
                 <motion.div
                   key={index}
                   variants={fadeInUp}
-                  className={`pb-20 border-b-2 grid gap-8 md:grid-cols-2 md:items-center ${service.align === "left" ? "md:grid-flow-dense" : ""
+                  className={`pb-20 grid gap-8 md:grid-cols-2 md:items-center ${service.align === "left" ? "md:grid-flow-dense" : ""
                     }`}
                 >
                   <div className={`${service.align === "left" ? "md:col-start-2" : ""}`}>
