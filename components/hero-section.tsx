@@ -103,9 +103,8 @@ export function HeroSection() {
             {sliderImages.map((_, index) => (
               <button
                 key={index}
-                className={`h-1 w-5 mx-1 rounded-full transition-all ${
-                  currentSlide === index ? "bg-[#F878FF]" : "bg-[#FCC9FF]"
-                }`}
+                className={`h-1 w-5 mx-1 rounded-full transition-all ${currentSlide === index ? "bg-[#F878FF]" : "bg-[#FCC9FF]"
+                  }`}
                 onClick={() => setCurrentSlide(index)}
               />
             ))}
@@ -119,10 +118,10 @@ export function HeroSection() {
         style={{ right: "100px" }}
       >
         <div
-          className="flex items-center justify-center rounded-full"
-          style={{ backgroundColor: "#f0dcfe", padding: 40 }}
+          className="flex items-center justify-center rounded-full hover:bg-[#f0dcfe] transition-all duration-300"
+          style={{ padding: 20 }}
         >
-          <Image src="/pinkwhats.png" alt="WhatsApp" width={73} height={73} />
+          <Image src="/pinkwhats.png" alt="WhatsApp" width={60} height={60} />
         </div>
       </div>
 
@@ -132,12 +131,13 @@ export function HeroSection() {
         style={{ right: "20px" }}
       >
         <div
-          className="flex items-center justify-center rounded-full"
-          style={{ backgroundColor: "#f0dcfe", padding: 20 }}
+          className="flex items-center justify-center rounded-full hover:bg-[#f0dcfe] transition-all duration-300"
+          style={{ padding: 15 }}
         >
           <Image src="/pinkwhats.png" alt="WhatsApp" width={40} height={40} />
         </div>
       </div>
+
     </section>
   )
 }
