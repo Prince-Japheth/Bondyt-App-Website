@@ -5,10 +5,32 @@ import { Heart } from "lucide-react"
 import { motion } from "framer-motion"
 import { fadeInUp, staggerChildren } from "@/lib/animations"
 import { HeroDownloadButtons } from "@/components/download-buttons"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { useState } from "react"
+
+const sliderImages = [
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20427321062-MLZ0OdXrqEsArk3i8R9SGvOuQOJjsI.png",
+  "/placeholder.svg?height=400&width=400",
+  "/placeholder.svg?height=400&width=400",
+  "/placeholder.svg?height=400&width=400",
+]
 
 export function HeroSection() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+
   const openWhatsApp = () => {
-    window.open(`https://wa.me/15096170531`, '_blank')
+    window.open(`https://wa.me/15096170531`, "_blank")
+  }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    afterChange: (index: number) => setCurrentSlide(index),
   }
 
   return (
@@ -64,43 +86,59 @@ export function HeroSection() {
         <HeroDownloadButtons />
 
         <motion.div variants={fadeInUp} className="relative mx-auto max-w-md">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20427321062-MLZ0OdXrqEsArk3i8R9SGvOuQOJjsI.png"
-            alt="Couple illustration"
-            width={400}
-            height={400}
-            className="mx-auto"
-          />
+          <Slider {...settings}>
+            {sliderImages.map((src, index) => (
+              <div key={index}>
+                <Image
+                  src={src || "/placeholder.svg"}
+                  alt={`Couple illustration ${index + 1}`}
+                  width={400}
+                  height={400}
+                  className="mx-auto"
+                />
+              </div>
+            ))}
+          </Slider>
+          <div className="flex justify-center mt-4">
+            {sliderImages.map((_, index) => (
+              <button
+                key={index}
+                className={`h-1 w-5 mx-1 rounded-full transition-all ${
+                  currentSlide === index ? "bg-[#F878FF]" : "bg-[#FCC9FF]"
+                }`}
+                onClick={() => setCurrentSlide(index)}
+              />
+            ))}
+          </div>
         </motion.div>
       </motion.div>
 
-      <div 
-    className="fixed bottom-4 z-50 cursor-pointer transform transition-transform hover:scale-105 hidden md:block" 
-    onClick={openWhatsApp}
-    style={{right: '100px'}}
-  >
-    <div
-      className="flex items-center justify-center rounded-full"
-      style={{ backgroundColor: "#f0dcfe", padding: 40 }}
-    >
-      <Image src="/pinkwhats.png" alt="WhatsApp" width={73} height={73} />
-    </div>
-  </div>
+      <div
+        className="fixed bottom-4 z-50 cursor-pointer transform transition-transform hover:scale-105 hidden md:block"
+        onClick={openWhatsApp}
+        style={{ right: "100px" }}
+      >
+        <div
+          className="flex items-center justify-center rounded-full"
+          style={{ backgroundColor: "#f0dcfe", padding: 40 }}
+        >
+          <Image src="/pinkwhats.png" alt="WhatsApp" width={73} height={73} />
+        </div>
+      </div>
 
-  <div 
-    className="fixed bottom-4 z-50 cursor-pointer transform transition-transform hover:scale-105 block md:hidden" 
-    onClick={openWhatsApp}
-    style={{right: '20px'}}
-  >
-    <div
-      className="flex items-center justify-center rounded-full"
-      style={{ backgroundColor: "#f0dcfe", padding: 20 }}
-    >
-      <Image src="/pinkwhats.png" alt="WhatsApp" width={40} height={40} />
-    </div>
-  </div>
-
-
+      <div
+        className="fixed bottom-4 z-50 cursor-pointer transform transition-transform hover:scale-105 block md:hidden"
+        onClick={openWhatsApp}
+        style={{ right: "20px" }}
+      >
+        <div
+          className="flex items-center justify-center rounded-full"
+          style={{ backgroundColor: "#f0dcfe", padding: 20 }}
+        >
+          <Image src="/pinkwhats.png" alt="WhatsApp" width={40} height={40} />
+        </div>
+      </div>
     </section>
   )
 }
+
