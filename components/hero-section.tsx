@@ -12,9 +12,8 @@ import { useState } from "react"
 
 const sliderImages = [
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20427321062-MLZ0OdXrqEsArk3i8R9SGvOuQOJjsI.png",
-  "/placeholder.svg?height=400&width=400",
-  "/placeholder.svg?height=400&width=400",
-  "/placeholder.svg?height=400&width=400",
+  "/hero-img2.png",
+  "/hero-img3.png",
 ]
 
 export function HeroSection() {
@@ -30,8 +29,12 @@ export function HeroSection() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true, // Enable auto slide
+    autoplaySpeed: 1000, // Slide interval in milliseconds
     afterChange: (index: number) => setCurrentSlide(index),
-  }
+    arrows: false, // Disable left and right arrows
+  };
+  
 
   return (
     <section className="relative overflow-hidden">
@@ -137,8 +140,6 @@ export function HeroSection() {
           <Image src="/pinkwhats.png" alt="WhatsApp" width={40} height={40} />
         </div>
       </div>
-
     </section>
   )
 }
-

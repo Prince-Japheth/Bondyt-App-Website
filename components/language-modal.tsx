@@ -46,7 +46,7 @@ export function LanguageModal({
 
     return (
         <Dialog open={isOpen} onOpenChange={onClose}>
-            <DialogContent className="sm:max-w-md p-10" style={{ borderRadius: 15, }}>
+            <DialogContent className="sm:max-w-md p-10" style={{borderRadius: 15,}}>
                 <DialogHeader className="flex flex-row items-center justify-between">
                     <DialogTitle>Country and language</DialogTitle>
 
@@ -77,8 +77,8 @@ export function LanguageModal({
                         </SelectContent>
                     </Select>
                 </div>
-                <div className="mt-4 w-full flex justify-start sm:justify-center sm:w-auto">
-                    <Button onClick={handleSave} className="w-full sm:w-auto p-6 bg-[#F878FF] text-white hover:bg-[#F878FF]/90 rounded-xl">
+                <div className="mt-4 flex justify-start">
+                    <Button onClick={handleSave} className="p-4 bg-[#F878FF] text-white hover:bg-[#F878FF]/90 rounded-xl p-6 w-full">
                         Save
                     </Button>
                 </div>
