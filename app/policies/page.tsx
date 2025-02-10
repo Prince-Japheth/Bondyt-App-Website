@@ -14,10 +14,7 @@ const policies = [
   {
     id: "0",
     title: "Anti Porn",
-    content: `
-ANTI-PORN LAW 
-Bondyt Anti-Porn Regulation and Enforcement Policy
-Effective Date: 1st January, 2025
+    content: `Effective Date: 1st January, 2025
  Last Updated: 1st January, 2025
  Version: 1.0
 
@@ -163,10 +160,7 @@ By using Bondyt, users acknowledge that they have read, understood, and agree to
   {
     id: "1",
     title: "Anti‐Trafficking",
-    content: `ANTI-TRAFFICKING LAW
-
-Anti‐Trafficking Act
-Effective Date: 1st January, 2025
+    content: `Effective Date: 1st January, 2025
  Last Updated: 1st January, 2025
  Version: 1.0
 
@@ -351,10 +345,7 @@ Repeals:
   {
     id: "2",
     title: "Privacy Policy",
-    content: `PRIVACY POLICY
-    
-Bondyt Privacy Policy
-Effective Date: 1st January, 2025
+    content: `Effective Date: 1st January, 2025
  Last Updated: 1st January, 2025
 
 1. Introduction
@@ -432,11 +423,7 @@ Bondyt reserves the right to modify or update this Privacy Policy from time to t
   {
     id: "3",
     title: "Terms and conditions",
-    content: `TERMS AND CONDITIONS
-
-
-Bondyt Terms and Conditions of Use
-Welcome to Bondyt’s Terms and Conditions of Use (these “Terms”). This is a contract between you and Bondyt Technologies (as defined further below) and we want you to know yours and our rights before you use the Bondyt website or application (“Bondyt” or the “App”). Please take a few moments to read these Terms before enjoying the App, because once you access, view or use the App, you are going to be legally bound by these Terms (so probably best to read them first!). Please also read our Community Guidelines (which form part of these Terms) and our Privacy Policy.
+    content: `Welcome to Bondyt’s Terms and Conditions of Use (these “Terms”). This is a contract between you and Bondyt Technologies (as defined further below) and we want you to know yours and our rights before you use the Bondyt website or application (“Bondyt” or the “App”). Please take a few moments to read these Terms before enjoying the App, because once you access, view or use the App, you are going to be legally bound by these Terms (so probably best to read them first!). Please also read our Community Guidelines (which form part of these Terms) and our Privacy Policy.
 Please be aware that if you subscribe to services for a term (the “Initial Term”), then the terms of your subscription will be automatically renewed for additional periods of the same duration as the Initial Term at Bondyt’s then-current fee for such services, unless you cancel your subscription in accordance with Section 5 below.
 You should also note that Section 13 of these Terms contains provisions governing how claims that you and Bondyt Technologies have against each other are resolved. In particular, it contains an arbitration agreement that will, with limited exceptions, require disputes between us to be submitted to binding and final arbitration. You have a right to opt out of the arbitration agreement pursuant to Section 13 below. If you do not opt out of the arbitration agreement in accordance with Section 13, (1) you will only be permitted to pursue claims and seek relief against us on an individual basis only; and (2) you are waiving your right to seek relief in a court of law and to have a jury trial on your claims.
 And a notice to California subscribers: You may cancel your subscription and request a refund at any time prior to midnight of the third business day following the date you subscribed. If you subscribed using your Apple ID, refunds are handled by Apple, not Bondyt. If you wish to request a refund, please visit Apple Support. If you subscribed using your Google Play Store account or through Bondyt, please contact customer support.
@@ -654,10 +641,7 @@ The Terms were last updated on: 27th November, 2024.
   {
     id: "4",
     title: "Refund policy",
-    content: `REFUND POLICY
-
-Bondyt Refund Policy
-Effective Date: 1st January, 2025
+    content: `Effective Date: 1st January, 2025
  Last Updated: 1st January, 2025
 
 
@@ -731,11 +715,9 @@ Email: support@bondyt.com
   {
     id: "5",
     title: "Merchant Policy",
-    content: `
-Bondyt Merchant Policy
-Effective Date: 1st January, 2025
+    content: `Effective Date: 1st January, 2025
  Last Updated: 1st January, 2025
- 
+
 
 1. Introduction
 Bondyt (“the Platform”) provides a marketplace where approved merchants (“Merchants”) may list products, services, and experiences to our community of users. This Merchant Policy (“Policy”) governs the relationship between Bondyt and any individual or entity that applies to and is approved for a merchant account, including those selling physical or digital items, listing hotels, clubs, restaurants, and other venues, as well as providing services such as private security, event management, or authoring content.
@@ -836,10 +818,7 @@ Email: [merchant@bondyt.com]
   {
     id: "6",
     title: "CHILD SEXUAL ABUSE AND EXPLOITATION (CSAE) POLICY",
-    content: `CAES
-
-CHILD SEXUAL ABUSE AND EXPLOITATION (CSAE) POLICY
-Effective Date: 1st January, 2025
+    content: `Effective Date: 1st January, 2025
  Last Updated: 1st January, 2025
 1. Purpose and Scope
 This policy is designed to ensure that Bondyt maintains a safe, secure, and abuse-free environment for all its users. It applies to all employees, contractors, third-party partners, and users of Bondyt. Although our platform is strictly for adults (18 years and older), we recognize the critical importance of safeguarding against any attempts at child sexual abuse or exploitation. This policy outlines our commitment, preventative measures, reporting procedures, and enforcement mechanisms.
