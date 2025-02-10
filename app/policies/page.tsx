@@ -732,6 +732,172 @@ Email: support@bondyt.com
     id: "5",
     title: "Merchant Policy",
     content: `
+Bondyt Merchant Policy
+Effective Date: 1st January, 2025
+ Last Updated: 1st January, 2025
+ 
+
+1. Introduction
+Bondyt (“the Platform”) provides a marketplace where approved merchants (“Merchants”) may list products, services, and experiences to our community of users. This Merchant Policy (“Policy”) governs the relationship between Bondyt and any individual or entity that applies to and is approved for a merchant account, including those selling physical or digital items, listing hotels, clubs, restaurants, and other venues, as well as providing services such as private security, event management, or authoring content.
+By registering as a Merchant on Bondyt, you agree to comply with this Policy and all related terms and conditions, as well as any additional guidelines provided by Bondyt.
+
+2. Definitions
+For purposes of this Policy, the following terms shall have the meanings set forth below:
+Bondyt: The dating app and online platform operated by [Company Name] that facilitates interactions between users and Merchants.
+Merchant: Any individual or entity approved by Bondyt to list products, services, or venues on the Platform.
+Products/Items: Tangible or digital goods offered for sale by a Merchant.
+Services: Non-tangible offerings, including but not limited to hotel reservations, club listings, restaurant promotions, event management services, private security services, or literary works by authors.
+Listing: Any advertisement, description, image, or other content submitted by a Merchant to promote their products or services on Bondyt.
+User: Any person who accesses or uses the Bondyt Platform.
+Transaction: Any financial exchange conducted between a Merchant and a User through the Platform.
+
+3. Merchant Registration and Account Management
+3.1. Eligibility and Application
+Registration: To become a Merchant, you must complete the registration process on the Bondyt Merchant Portal. This includes providing accurate and complete business information and agreeing to this Policy.
+Verification: Bondyt reserves the right to verify the identity, business credentials, and any required licenses or permits for your particular industry (e.g., hospitality, private security, event management) before approval.
+Approval: Bondyt’s sole discretion governs whether an application is approved. Bondyt may reject any application without liability or obligation to provide reasons.
+3.2. Account Security and Maintenance
+Responsibility: Merchants are responsible for maintaining the confidentiality of their account credentials and for all activities conducted through their account.
+Updates: Merchants must promptly update any changes to their business information or contact details.
+
+4. Listing Guidelines and Content Requirements
+4.1. General Content Requirements
+Accuracy: All listings must be truthful, accurate, and not misleading. Merchants must represent their products, services, and venues honestly.
+Intellectual Property: Merchants must own or have the right to use all content (including images, descriptions, and logos) that they submit. Listings must not infringe upon any third-party rights.
+Compliance: Listings must comply with all applicable laws and regulations, including health, safety, and licensing requirements relevant to the industry (e.g., hospitality, security, events).
+4.2. Category-Specific Guidelines
+Hotels, Clubs, Restaurants, and Other Venues
+Listing Content: Must include clear descriptions, images, and any applicable location details. Pricing, amenities, and booking terms should be transparently stated.
+Availability and Reservations: Merchants are responsible for ensuring that availability information is accurate and that any reservation or booking system is reliable.
+Private Security Agencies
+Licensing and Certifications: Merchants must provide verifiable evidence of proper licensing, certifications, and compliance with local regulations.
+Service Descriptions: Detailed descriptions of the scope of services, including response times, personnel qualifications, and insurance coverage, must be included.
+Event Management Companies
+Event Information: Listings should include comprehensive details of upcoming events or services, including dates, locations, pricing, and terms and conditions for attendance or participation.
+Refunds and Cancellations: Clear policies regarding ticket refunds, cancellations, or rescheduling must be provided.
+Authors and Content Providers
+Content Ownership: Merchants must affirm that they hold the rights to any content, publications, or literary works they offer.
+Digital Delivery: For digital products, clear instructions on delivery, access, or download processes must be provided.
+
+5. Payment Terms and Commission
+5.1. Transaction Processing
+Payments: All financial transactions processed through the Bondyt Platform will be handled via approved payment gateways.
+Fees: Bondyt reserves the right to charge a commission fee or service fee on each transaction. The applicable fee structure will be provided during the registration process and may be updated from time to time.
+Refunds and Disputes: Merchants must establish and display clear refund and cancellation policies. Bondyt may assist in mediating disputes between Merchants and Users, but Merchants are expected to resolve issues in accordance with their stated policies.
+5.2. Billing and Payouts
+Billing Cycles: Merchants will receive payouts according to the billing cycle set forth by Bondyt, subject to any holds or reserves as determined by Bondyt.
+Chargebacks: Merchants are responsible for handling any chargebacks or payment disputes that arise and may be subject to additional fees or account review if chargebacks occur frequently.
+
+6. Merchant Obligations and Conduct
+6.1. Representations and Warranties
+By using Bondyt’s merchant services, you represent and warrant that:
+You are legally authorized to offer the products, services, or venues described in your listings.
+Your listings comply with all applicable laws, regulations, and industry standards.
+You will maintain all necessary licenses, permits, and certifications required for your operations.
+6.2. Prohibited Conduct
+Merchants agree not to:
+Submit false, deceptive, or misleading information.
+Engage in fraudulent transactions or practices.
+Post content that is discriminatory, hateful, or otherwise violates Bondyt’s community standards.
+Circumvent Bondyt’s fee structure or attempt to transact outside of the Platform without prior written consent.
+Engage in any activity that may harm the reputation, security, or operation of the Bondyt Platform.
+
+7. Liability, Indemnification, and Dispute Resolution
+7.1. Limitation of Liability
+Merchant Liability: Merchants are solely responsible for any claims, liabilities, or damages arising from the products or services they offer.
+Platform Liability: Bondyt acts only as an intermediary and is not liable for any disputes or issues between Merchants and Users, except as otherwise required by law.
+7.2. Indemnification
+Merchants agree to indemnify, defend, and hold harmless Bondyt and its affiliates, officers, agents, and employees from any claim, demand, loss, or damage (including legal fees) arising out of or related to:
+Their use of the Platform.
+Any breach of this Policy.
+The content of their listings.
+7.3. Dispute Resolution
+Direct Negotiation: Merchants and Users are encouraged to resolve disputes directly through open communication.
+Mediation/Arbitration: If direct resolution fails, Bondyt may facilitate mediation or require arbitration in accordance with the Platform’s dispute resolution procedures.
+Governing Law: This Policy and any disputes arising hereunder shall be governed by and construed in accordance with the laws of [Insert Jurisdiction], without regard to its conflict of law provisions.
+
+8. Privacy and Data Usage
+Data Collection: Bondyt may collect and process Merchant information as described in our [Privacy Policy]. This includes business contact information, transaction data, and usage metrics.
+Usage of Data: Merchant data may be used to improve service offerings, facilitate communication, and for analytical purposes. Bondyt will not share Merchant personal information with third parties except as required by law or as described in the Privacy Policy.
+
+9. Termination and Modifications
+9.1. Termination
+By Bondyt: Bondyt reserves the right to terminate or suspend a Merchant’s account at any time, without prior notice, for any violation of this Policy or for conduct that may harm the Platform or its Users.
+By the Merchant: Merchants may terminate their account by providing notice in accordance with Bondyt’s procedures. Outstanding obligations and disputes will continue to be governed by this Policy.
+9.2. Modifications to the Policy
+Bondyt may amend this Policy from time to time. Merchants will be notified of material changes via email or through the Merchant Portal. Continued use of the Platform following the posting of changes constitutes acceptance of those changes.
+
+10. Contact Information
+For any questions, concerns, or further information regarding this Merchant Policy, please contact our Merchant Support team at:
+Email: [merchant@bondyt.com]
+`,
+  },
+
+  {
+    id: "6",
+    title: "CHILD SEXUAL ABUSE AND EXPLOITATION (CSAE) POLICY",
+    content: `CAES
+
+CHILD SEXUAL ABUSE AND EXPLOITATION (CSAE) POLICY
+Effective Date: 1st January, 2025
+ Last Updated: 1st January, 2025
+1. Purpose and Scope
+This policy is designed to ensure that Bondyt maintains a safe, secure, and abuse-free environment for all its users. It applies to all employees, contractors, third-party partners, and users of Bondyt. Although our platform is strictly for adults (18 years and older), we recognize the critical importance of safeguarding against any attempts at child sexual abuse or exploitation. This policy outlines our commitment, preventative measures, reporting procedures, and enforcement mechanisms.
+2. Definitions
+Child: Any individual under the age of 18 years.
+Sexual Abuse: Any sexual activity involving a child, including grooming, exploitation, or any attempt to initiate such behavior.
+Exploitation: The act of using or benefiting from abuse or manipulation of a child for sexual purposes.
+Grooming: The process of building an emotional connection with a child with the intent to lower their inhibitions for sexual exploitation.
+3. Policy Statement
+Bondyt is committed to zero tolerance for any form of child sexual abuse or exploitation. We strictly prohibit any content or behavior that encourages, depicts, or facilitates such abuse. Our platform is exclusively for adult users; thus, we have implemented robust measures to verify user age and monitor content to prevent any form of CSAE. Any violation will result in immediate and severe action, including permanent account suspension and notification to law enforcement.
+4. Preventative Measures
+Age Verification:
+Mandatory age verification is required during the sign-up process using reliable methods (e.g., government-issued ID checks, third-party verification services) to ensure all users are 18 years or older.
+Regular audits will be conducted to detect any discrepancies or attempts to bypass the age verification process.
+Content Monitoring:
+Continuous monitoring of user-generated content (profiles, messages, live streams) using automated tools and human moderators to detect any language or imagery that suggests CSAE.
+Implementation of keyword filters and machine-learning algorithms to flag suspicious behavior or content for further review.
+User Education and Guidelines:
+Clear community guidelines are provided to all users, outlining prohibited behaviors and the consequences of violations.
+Periodic reminders and in-app prompts educate users on safe practices and the importance of reporting inappropriate content or behavior.
+Reporting Mechanisms:
+Easy-to-access reporting tools within the app enable users to flag any content or behavior they suspect violates this policy.
+A dedicated hotline and email address for urgent CSAE concerns are available 24/7.
+5. Reporting and Response Procedures
+Internal Reporting:
+All reports of suspected CSAE will be immediately escalated to the Bondyt Safety and Compliance Team.
+Reports will be investigated promptly and thoroughly, with affected accounts suspended pending investigation.
+Collaboration with Law Enforcement:
+Bondyt will cooperate fully with law enforcement agencies in any investigation related to CSAE.
+Information will be shared in accordance with legal obligations and privacy laws, ensuring a balance between user confidentiality and the necessity of protecting vulnerable individuals.
+Protection for Whistleblowers:
+Users and employees reporting CSAE concerns in good faith are protected from retaliation. Confidentiality will be maintained throughout the process.
+6. Responsibilities
+Safety and Compliance Team:
+Oversee the implementation, monitoring, and review of this CSAE policy.
+Ensure all reports are handled with urgency and in compliance with legal requirements.
+Employees and Moderators:
+Receive ongoing training on CSAE policies and procedures.
+Actively monitor content and report any suspicious activity.
+Users:
+Adhere to Bondyt’s community guidelines.
+Report any content or behavior that they believe may contravene this policy.
+7. Training and Awareness
+Regular training sessions will be mandatory for all Bondyt staff and moderators on detecting, reporting, and managing CSAE incidents.
+Awareness campaigns will be conducted to educate users on recognizing and reporting abusive behavior.
+8. Enforcement and Disciplinary Actions
+Immediate suspension and permanent banning of accounts found to be in violation of the CSAE policy.
+Violation of this policy may result in legal action, including reporting to law enforcement authorities.
+Regular audits and compliance reviews will be conducted to ensure the policy is upheld.
+9. Monitoring, Review, and Updates
+This policy will be reviewed on an annual basis, or more frequently if necessary, to adapt to emerging risks, technological advancements, and legal requirements.
+User feedback and incident analysis will inform updates and improvements to our CSAE practices.
+10. Communication
+This policy is communicated clearly on Bondyt’s website, in our user agreements, and within the app.
+Updates or changes to the policy will be promptly communicated to all stakeholders.
+
+Bondyt is dedicated to creating a safe space for adult dating by rigorously enforcing our CSAE policy. We are committed to protecting our users and ensuring that any attempt to exploit or abuse is met with decisive action.
+If you have any questions or need further information regarding this policy, please contact our Safety and Compliance Team at [support@bondyt.com].
 `,
   },
 ]
