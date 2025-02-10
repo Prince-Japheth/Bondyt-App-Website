@@ -352,8 +352,7 @@ Repeals:
     id: "2",
     title: "Privacy Policy",
     content: `PRIVACY POLICY
-Below is a sample Privacy Policy for the Bondyt Dating App. Please note: This document is provided for illustrative purposes only and does not constitute legal advice. It is recommended that this policy be reviewed and tailored by legal counsel to ensure compliance with applicable laws and regulations.
-
+    
 Bondyt Privacy Policy
 Effective Date: 1st January, 2025
  Last Updated: 1st January, 2025
