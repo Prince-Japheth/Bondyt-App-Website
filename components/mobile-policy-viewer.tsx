@@ -48,12 +48,8 @@ export function MobilePolicyViewer({ policies }: MobilePolicyViewerProps) {
                 className="overflow-hidden"
               >
                 <div className="px-6 py-4">
-                  <div className="prose max-w-none text-gray-600">
-                    {policy.content.split("\n\n").map((paragraph, index) => (
-                      <p key={index} className="mb-4 last:mb-0">
-                        {paragraph.trim()}
-                      </p>
-                    ))}
+                  <div className="prose max-w-none text-gray-600 whitespace-pre-wrap">
+                    {policy.content}
                   </div>
                 </div>
               </motion.div>
